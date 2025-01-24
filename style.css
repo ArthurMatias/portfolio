@@ -5,7 +5,9 @@ body, html {
     color: #fff;
     background: #1b1b1b;
     overflow-x: hidden;
+    scrollbar-width: none;
 }
+
   
 .hero {
     position: relative;
@@ -52,7 +54,7 @@ body, html {
 }
   
 .social-links {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     display: flex;
@@ -63,6 +65,7 @@ body, html {
     align-items: center;
     border-radius: 1rem;
     justify-content: center;
+    z-index: 2;
 }
 
 i{
@@ -85,4 +88,72 @@ i:hover{
     width: 30px;
     height: 30px;
 }
-  
+
+.espaco-vazio {
+    width: 100%;
+    height: 140px;
+    background: rgb(0, 0, 0);
+}
+
+.habilidades-section h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+    font-family: "Roboto", serif;
+    text-align: center;
+}
+
+.habilidades-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    font-family: "Roboto", serif;
+    text-align: center;
+}
+
+.habilidades-section{
+    align-content: center;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, #00000000),linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),url('./img/pordosol.png') no-repeat center center/cover;
+}
+
+.col1,.col2 {
+    display: flex;
+    justify-content: center;
+    margin: 0.7rem;
+}
+
+.habilidades-icons #IA, #PS, #react, #pgadm, #js, #ts, #tailwind{
+    width: 60px;
+    margin: 1rem;
+}
+
+.habilidades-icons #html, #css{
+    width: 50px;
+    margin: 1rem;
+}
+
+.habilidades-icons #figma{
+    width: 40px;
+    margin: 1rem;
+}
+
+.habilidades-icons #IA:hover, #PS:hover, #react:hover, #pgadm:hover, #js:hover, #ts:hover, #tailwind:hover{
+    width: 70px;
+    transition: 200ms;
+    margin: 0.7rem;
+}
+
+.habilidades-icons #html:hover, #css:hover{
+    width: 60px;
+    transition: 200ms;
+    margin: 0.7rem;
+}
+
+.habilidades-icons #figma:hover{
+    width: 50px;
+    transition: 200ms;
+    margin: 0.7rem;
+}
+
